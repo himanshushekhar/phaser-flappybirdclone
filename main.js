@@ -63,7 +63,7 @@ var mainState = {
         if (this.bird.inWorld == false)
             this.restartGame();
         
-        // Restart the game when bird collides with the pipe
+        // Finish and restart the game when bird collides with the pipe
         game.physics.arcade.overlap(this.bird, this.pipes, this.hitPipe, null, this); 
         
         // Add some animations
